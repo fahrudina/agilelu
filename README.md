@@ -1,2 +1,2 @@
 # agilelu
-Agile Lu Project
+Agile Lu Project is 'YoseTheGame' project
