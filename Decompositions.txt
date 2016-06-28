@@ -1,3 +1,39 @@
+CODE :
+///////////////////////////////////
+$pembagi = 2;
+$count = 0;
+$result = array();
+
+while(1){
+	
+	$num = $num / $pembagi;
+	
+	//echo "num:".$num. "<br>";
+	if(is_float($num)) {
+		//echo "TRUE";
+		$num = $num * $pembagi;
+		$num = (int) $num;
+		if($pembagi==2) $pembagi = 3;
+		else $pembagi += 2;
+		
+		//echo ":: ".$num." ".$pembagi."<br>";
+	}
+	else {
+		$result[] = $pembagi;
+		//print_r($result);
+		//echo "FALSE";
+	}
+	
+	if($num<=1)	break;
+	
+}
+
+print_r($result);
+
+//////////////////////////////////
+
+
+
 Decompositions :
 Membagi dengan bilangan prima.
 
@@ -19,3 +55,6 @@ Pembagian :
 9 / 2 = 4.5 (tidak bulat) maka 9/3 = 3 (bulat) => output 3
 
 Result : 2,2,3
+
+
+
