@@ -68,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1>Hello Yose</h1>
 
 	<div id="body">
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
@@ -81,6 +81,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
+
+	<div id="body">
+		<a id="repository-link" href="https://github.com/fahrudina/agilelu/blob/master/README.md">github</a>  display, in a #readme element, the content of a readme file present in the root folder of a repository.
+	</div>
+
+	<div id="body">
+		<a id="contact-me-link" href="http://slack.id/agilelu/">github</a>  display, in a #readme element, the content of a readme file present in the root folder of a repository.
+	</div>
+	
+	<div id="body">
+		<a id="ping-challenge-link" href="http://slack.id/agilelu/ping">github</a>  display, in a #readme element, the content of a readme file present in the root folder of a repository.
+	</div> 
+
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
