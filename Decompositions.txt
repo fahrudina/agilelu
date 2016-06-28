@@ -6,26 +6,16 @@ $result = array();
 
 while(1){
 	
-	$num = $num / $pembagi;
-	
-	//echo "num:".$num. "<br>";
-	if(is_float($num)) {
-		//echo "TRUE";
-		$num = $num * $pembagi;
-		$num = (int) $num;
+	$res = $num / $pembagi;
+	if(is_float($res)) {
 		if($pembagi==2) $pembagi = 3;
 		else $pembagi += 2;
-		
-		//echo ":: ".$num." ".$pembagi."<br>";
 	}
 	else {
 		$result[] = $pembagi;
-		//print_r($result);
-		//echo "FALSE";
+		$num = $res;
 	}
-	
-	if($num<=1)	break;
-	
+	if($res<=1)	break;
 }
 
 print_r($result);
