@@ -1,0 +1,50 @@
+CODE :
+///////////////////////////////////
+$pembagi = 2;
+$count = 0;
+$result = array();
+
+while(1){
+	
+	$res = $num / $pembagi;
+	if(is_float($res)) {
+		if($pembagi==2) $pembagi = 3;
+		else $pembagi += 2;
+	}
+	else {
+		$result[] = $pembagi;
+		$num = $res;
+	}
+	if($res<=1)	break;
+}
+
+print_r($result);
+
+//////////////////////////////////
+
+
+
+Decompositions :
+Membagi dengan bilangan prima.
+
+Bispro:
+Input : Numbers
+Bilangan Prima : 2,3,5,7,9, dst ankga ganjil
+
+Proses : 
+Numbers dibagi dengan bilangan prima terkecil:
+- jika hasilnya bulat maka bilangan prima tersebut menjadi output
+- jika hasilnya tidak bulat maka dibagi ulang dengan bilangan prima selanjutnya
+
+Contoh : 
+
+Numbers 36
+Pembagian : 
+36 / 2 = 18 (bulat) => output : 2
+18 / 2 = 9 (bulat) => output : 2
+9 / 2 = 4.5 (tidak bulat) maka 9/3 = 3 (bulat) => output 3
+
+Result : 2,2,3
+
+
+
